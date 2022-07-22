@@ -1,11 +1,27 @@
 .preview-card {
   position: relative;
-  aspect-ratio: 343 / 420;
+  @supports (aspect-ratio: auto) {
+    aspect-ratio: 343 / 420;
+  }
+  @supports not (aspect-ratio: auto) {
+    padding-top: 100%;
+  }
+
   @media screen and (min-width: 744px) {
-    aspect-ratio: 664 / 518;
+    @supports (aspect-ratio: auto) {
+      aspect-ratio: 664 / 518;
+    }
+    @supports not (aspect-ratio: auto) {
+      padding-top: 100%;
+    }
   }
   @media screen and (min-width: 1200px) {
-    aspect-ratio: 857 / 668;
+    @supports (aspect-ratio: auto) {
+      aspect-ratio: 857 / 668;
+    }
+    @supports not (aspect-ratio: auto) {
+      padding-top: 100%;
+    }
   }
 
   &:after {
