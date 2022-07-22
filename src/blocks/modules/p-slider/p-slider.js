@@ -1,4 +1,4 @@
-import Swiper from 'swiper/bundle';
+import Swiper, { Navigation } from 'swiper';
 
 const pSlider = document.getElementsByClassName('js-p-slider')[0];
 const loadMoreBtn = document.getElementsByClassName('js-load-more')[0];
@@ -11,6 +11,7 @@ function swiperInit() {
     if (!init) {
       init = true;
       swiper = new Swiper('.js-p-slider', {
+        modules: [Navigation],
         loop: true,
         slidesPerView: 2.13,
         spaceBetween: 10,
