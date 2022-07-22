@@ -4,7 +4,7 @@
     aspect-ratio: 343 / 420;
   }
   @supports not (aspect-ratio: auto) {
-    padding-top: 100%;
+    padding-top: 122%;
   }
 
   @media screen and (min-width: 744px) {
@@ -12,7 +12,7 @@
       aspect-ratio: 664 / 518;
     }
     @supports not (aspect-ratio: auto) {
-      padding-top: 100%;
+      padding-top: 78%;
     }
   }
   @media screen and (min-width: 1200px) {
@@ -20,7 +20,7 @@
       aspect-ratio: 857 / 668;
     }
     @supports not (aspect-ratio: auto) {
-      padding-top: 100%;
+      padding-top: 77%;
     }
   }
 
