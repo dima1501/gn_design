@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Main Page</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="description">
+    <meta name="keywords" content="keywords">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <body>
+    <header class="header js-header _main">
+      <div class="header__inner">
+        <div class="header__top"><a class="header__top-logo" href="#">GN Design</a><a class="header__top-phone" href="#">8 (911) 987 47 77</a>
+          <div class="header__burger js-burger">
+            <div class="header__burger-bar"></div>
+            <div class="header__burger-bar"></div>
+            <div class="header__burger-bar"></div>
+          </div>
+        </div>
+        <div class="header__controls">
+          <nav class="header__nav">
+            <ul class="header__nav-ul">
+              <li class="header__nav-li"><a class="header__nav-link js-anchor" href="#" data-anchor="#portfolio">Портфолио </a></li>
+              <li class="header__nav-li"><a class="header__nav-link js-anchor" href="#" data-anchor="#contacts">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header__social">
+            <ul class="social">
+              <li class="social__item"><a class="social__item-link" href="#">
+                  <svg class="social__item-svg">
+                    <use xlink:href="img/sprites/sprite.svg#icon-inst"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__item-link" href="#">
+                  <svg class="social__item-svg">
+                    <use xlink:href="img/sprites/sprite.svg#icon-tg"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__item-link" href="#">
+                  <svg class="social__item-svg">
+                    <use xlink:href="img/sprites/sprite.svg#icon-wa"></use>
+                  </svg></a></li>
+            </ul>
+          </div><a class="header__phone" href="tel:8 (911) 987 47 77">8 (911) 987 47 77</a><a class="header__email" href="mailto:info@gndesign.ru">info@gndesign.ru</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="welcome" style="background-image: url(img/welcome_main_bg.jpg)">
+        <div class="welcome__inner">
+          <div class="welcome__content _mobile-hidden">
+            <p class="welcome__text">Разрабатываю дизайн современных стильных помещений и домов.</p>
+            <p class="welcome__text">Полный дизайн-проект, авторский надзор, проработка индивидуальных элементов.</p>
+          </div>
+          <div class="welcome__nav"><a class="welcome__nav-item js-anchor" href="#" data-anchor="#portfolio">
+              <h2 class="welcome__nav-title">Портфолио</h2>
+              <p class="welcome__nav-note">Наши работы</p></a><a class="welcome__nav-item js-anchor" href="#" data-anchor="#contacts">
+              <h2 class="welcome__nav-title">Контакты</h2>
+              <p class="welcome__nav-note">Связаться с нами</p></a></div>
+        </div>
+      </section>
+      <section class="section" id="portfolio">
+        <h2 class="section__title">Портфолио</h2>
+        <div class="section__content">
+          <div class="p-slider js-p-slider swiper">
+            <div class="p-slider__next"></div>
+            <div class="swiper-wrapper">
+              <div class="p-slider__item swiper-slide">
+                <div class="preview-card"><a class="preview-card__link" href="#"></a>
+                  <picture class="preview-card__pic">
+                    <source type="image/webp" srcset="img/slide_1.webp 1x, img/slide_1.webp 2x"><img class="preview-card__pic-img" src="img/slide_1.jpg" srcset="img/slide_1.jpg 1x, img/slide_1.jpg 2x" alt="" title="" loading="lazy">
+                  </picture>
+                  <div class="preview-card__content">
+                    <h4 class="preview-card__title">Квартира </br>Артемия Панарина</h4>
+                    <p class="preview-card__note">Москва</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-slider__item swiper-slide">
+                <div class="preview-card"><a class="preview-card__link" href="#"></a>
+                  <picture class="preview-card__pic">
+                    <source type="image/webp" srcset="img/slide_2.webp 1x, img/slide_2.webp 2x"><img class="preview-card__pic-img" src="img/slide_2.jpg" srcset="img/slide_2.jpg 1x, img/slide_2.jpg 2x" alt="" title="" loading="lazy">
+                  </picture>
+                  <div class="preview-card__content">
+                    <h4 class="preview-card__title">Москва </br>Квесисская</h4>
+                    <p class="preview-card__note">Москва</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-slider__item swiper-slide">
+                <div class="preview-card"><a class="preview-card__link" href="#"></a>
+                  <picture class="preview-card__pic">
+                    <source type="image/webp" srcset="img/slide_3.webp 1x, img/slide_3.webp 2x"><img class="preview-card__pic-img" src="img/slide_3.jpg" srcset="img/slide_3.jpg 1x, img/slide_3.jpg 2x" alt="" title="" loading="lazy">
+                  </picture>
+                  <div class="preview-card__content">
+                    <h4 class="preview-card__title">Квартира </br>Артемия Панарина</h4>
+                    <p class="preview-card__note">Москва</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-slider__item swiper-slide">
+                <div class="preview-card"><a class="preview-card__link" href="#"></a>
+                  <picture class="preview-card__pic">
+                    <source type="image/webp" srcset="img/slide_1.webp 1x, img/slide_1.webp 2x"><img class="preview-card__pic-img" src="img/slide_1.jpg" srcset="img/slide_1.jpg 1x, img/slide_1.jpg 2x" alt="" title="" loading="lazy">
+                  </picture>
+                  <div class="preview-card__content">
+                    <h4 class="preview-card__title">Квартира </br>Артемия Панарина</h4>
+                    <p class="preview-card__note">Москва</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-slider__item swiper-slide">
+                <div class="preview-card"><a class="preview-card__link" href="#"></a>
+                  <picture class="preview-card__pic">
+                    <source type="image/webp" srcset="img/slide_2.webp 1x, img/slide_2.webp 2x"><img class="preview-card__pic-img" src="img/slide_2.jpg" srcset="img/slide_2.jpg 1x, img/slide_2.jpg 2x" alt="" title="" loading="lazy">
+                  </picture>
+                  <div class="preview-card__content">
+                    <h4 class="preview-card__title">Москва </br>Квесисская</h4>
+                    <p class="preview-card__note">Москва</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-slider__item swiper-slide">
+                <div class="preview-card"><a class="preview-card__link" href="#"></a>
+                  <picture class="preview-card__pic">
+                    <source type="image/webp" srcset="img/slide_3.webp 1x, img/slide_3.webp 2x"><img class="preview-card__pic-img" src="img/slide_3.jpg" srcset="img/slide_3.jpg 1x, img/slide_3.jpg 2x" alt="" title="" loading="lazy">
+                  </picture>
+                  <div class="preview-card__content">
+                    <h4 class="preview-card__title">Квартира </br>Артемия Панарина</h4>
+                    <p class="preview-card__note">Москва</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-slider__item swiper-slide">
+                <div class="preview-card"><a class="preview-card__link" href="#"></a>
+                  <picture class="preview-card__pic">
+                    <source type="image/webp" srcset="img/slide_1.webp 1x, img/slide_1.webp 2x"><img class="preview-card__pic-img" src="img/slide_1.jpg" srcset="img/slide_1.jpg 1x, img/slide_1.jpg 2x" alt="" title="" loading="lazy">
+                  </picture>
+                  <div class="preview-card__content">
+                    <h4 class="preview-card__title">Квартира </br>Артемия Панарина</h4>
+                    <p class="preview-card__note">Москва</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-slider__item swiper-slide">
+                <div class="preview-card"><a class="preview-card__link" href="#"></a>
+                  <picture class="preview-card__pic">
+                    <source type="image/webp" srcset="img/slide_2.webp 1x, img/slide_2.webp 2x"><img class="preview-card__pic-img" src="img/slide_2.jpg" srcset="img/slide_2.jpg 1x, img/slide_2.jpg 2x" alt="" title="" loading="lazy">
+                  </picture>
+                  <div class="preview-card__content">
+                    <h4 class="preview-card__title">Москва </br>Квесисская</h4>
+                    <p class="preview-card__note">Москва</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-slider__item swiper-slide">
+                <div class="preview-card"><a class="preview-card__link" href="#"></a>
+                  <picture class="preview-card__pic">
+                    <source type="image/webp" srcset="img/slide_3.webp 1x, img/slide_3.webp 2x"><img class="preview-card__pic-img" src="img/slide_3.jpg" srcset="img/slide_3.jpg 1x, img/slide_3.jpg 2x" alt="" title="" loading="lazy">
+                  </picture>
+                  <div class="preview-card__content">
+                    <h4 class="preview-card__title">Квартира </br>Артемия Панарина</h4>
+                    <p class="preview-card__note">Москва</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-slider__more">
+              <button class="btn js-load-more">Загрузить еще</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <div class="contacts__inner">
+          <h2 class="contacts__title">Наши контакты</h2>
+          <div class="contacts__data">
+            <div class="contacts__data-line"><a class="contacts__data-link" href="tel:8 (911) 987 47 77">8 (911) 987 47 77</a></div>
+            <div class="contacts__data-line"><a class="contacts__data-link" href="mailto:info@gndesign.ru">info@gndesign.ru</a></div>
+            <div class="contacts__data-line">
+              <p class="contacts__data-text">Санкт-Петербург, ул. Крапоткина, 1</p>
+            </div>
+            <div class="contacts__data-line">
+              <ul class="social">
+                <li class="social__item"><a class="social__item-link" href="#">
+                    <svg class="social__item-svg">
+                      <use xlink:href="img/sprites/sprite.svg#icon-inst"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__item-link" href="#">
+                    <svg class="social__item-svg">
+                      <use xlink:href="img/sprites/sprite.svg#icon-tg"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__item-link" href="#">
+                    <svg class="social__item-svg">
+                      <use xlink:href="img/sprites/sprite.svg#icon-wa"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__col">
+          <div class="footer__item">2022 © GNdesign</div>
+        </div>
+        <div class="footer__col"><a class="footer__phone" href="tel:8 (911) 987 47 77">8 (911) 987 47 77</a>
+          <div class="footer__soc">
+            <ul class="social">
+              <li class="social__item"><a class="social__item-link" href="#">
+                  <svg class="social__item-svg">
+                    <use xlink:href="img/sprites/sprite.svg#icon-inst"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__item-link" href="#">
+                  <svg class="social__item-svg">
+                    <use xlink:href="img/sprites/sprite.svg#icon-tg"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__item-link" href="#">
+                  <svg class="social__item-svg">
+                    <use xlink:href="img/sprites/sprite.svg#icon-wa"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__col">
+          <div class="footer__item">Разработано в <a href="#">Indexis </a></div>
+        </div>
+        <div class="footer__col"><a class="footer__item" href="#">Политика конфиденциальности</a></div>
+      </div>
+    </footer>
+    <div class="up-btn js-scroll-top"></div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+.welcome {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), transparent;
+  }
+  &__inner {
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    padding: 106px 15px 24px;
+    flex-direction: column;
+    @media screen and (min-width: 744px) {
+      padding: 120px 40px 28px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 120px 80px 80px;
+      align-items: flex-end;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__content {
+    &._mobile-hidden {
+      display: none;
+      @media screen and (min-width: 744px) {
+      }
+      @media screen and (min-width: 1200px) {
+        display: block;
+      }
+    }
+  }
+  &__title {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.3;
+    color: #ffffff;
+    @media screen and (min-width: 1200px) {
+      font-size: 48px;
+    }
+  }
+  &__note {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    @media screen and (min-width: 1200px) {
+      margin-top: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 20px;
+    }
+  }
+  &__text {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.3;
+    color: #ffffff;
+    margin-bottom: 30px;
+    max-width: 537px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: auto;
+    @media screen and (min-width: 744px) {
+      display: block;
+      width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+    }
+    &-item {
+      display: inline-block;
+      text-decoration: none;
+      padding: 0 0 10px 0;
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      min-width: 186px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      @media screen and (min-width: 744px) {
+        display: block;
+        min-width: unset;
+        margin-bottom: 28px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin: 0;
+        padding: 20px 0 40px 0;
+      }
+    }
+    &-title {
+      font-family: 'Montserrat';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.3;
+      color: #ffffff;
+      text-transform: uppercase;
+      @media screen and (min-width: 744px) {
+        font-size: 36px;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 48px;
+        text-transform: none;
+        margin-bottom: 10px;
+      }
+    }
+    &-note {
+      display: none;
+      @media screen and (min-width: 1200px) {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.3;
+        color: #ffffff;
+        opacity: 0.2;
+        display: block;
+      }
+    }
+  }
+  &__err {
+    @media screen and (min-width: 744px) {
+      margin-bottom: auto;
+      margin-top: 153px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    &-title {
+      font-family: 'Montserrat';
+      font-weight: 400;
+      font-size: 32px;
+      max-width: 164px;
+      line-height: 1.3;
+      color: #ffffff;
+      margin-bottom: 41px;
+      @media screen and (min-width: 744px) {
+        margin-bottom: 50px;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 48px;
+        max-width: unset;
+        margin-bottom: 165px;
+      }
+    }
+    &-num {
+      font-family: 'Montserrat';
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 1.3;
+      color: #ffffff;
+      @media screen and (min-width: 744px) {
+        font-size: 96px;
+      }
+      @media screen and (min-width: 1200px) {
+      }
+    }
+  }
+}

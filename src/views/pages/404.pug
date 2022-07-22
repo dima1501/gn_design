@@ -1,0 +1,27 @@
+extends ../layouts/default
+
+block variables
+  - const title = "Main Page";
+  - const error = "true";
+
+block content
+  include ../../blocks/modules/header/header
+
+  main
+    section.welcome(style="background-image: url(img/err-bg.jpg)")
+      .welcome__inner
+        .welcome__content
+          .welcome__err
+            h1.welcome__err-title Такой страницы нет
+            p.welcome__err-num 404
+        .welcome__nav
+          a(href="#").welcome__nav-item
+            h2.welcome__nav-title Портфолио
+            p.welcome__nav-note Наши работы
+          a(href="#").welcome__nav-item
+            h2.welcome__nav-title Контакты
+            p.welcome__nav-note Связаться с нами
+
+block scripts
+  script(src="js/vendor.js")
+  script(src="js/main.js")

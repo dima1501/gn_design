@@ -1,0 +1,77 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Main Page";
+
+block content
+	include ../../blocks/modules/header/header
+
+	main
+		section.welcome(style="background-image: url(img/welcome_bg.jpg)")
+			.welcome__inner
+				.welcome__content
+					h1.welcome__title Квартира</br>Артемия Панарина
+					p.welcome__note Москва
+
+		section.gallery
+			.gallery__inner
+				.gallery__col
+					.gallery__item
+						picture.gallery__item-pic
+							source(type="image/webp" srcset="img/gallery_1.webp 1x, img/gallery_1@2x.webp 2x")
+							img(src="img/gallery_1.jpg" srcset="img/gallery_1.jpg 1x, img/gallery_1@2x.jpg 2x" alt="" title="" loading="lazy").gallery__item-img
+					.gallery__item
+						picture.gallery__item-pic
+							source(type="image/webp" srcset="img/gallery_3.webp 1x, img/gallery_3@2x.webp 2x")
+							img(src="img/gallery_3.jpg" srcset="img/gallery_3.jpg 1x, img/gallery_3@2x.jpg 2x" alt="" title="" loading="lazy").gallery__item-img
+					.gallery__item
+						picture.gallery__item-pic
+							source(type="image/webp" srcset="img/gallery_5.webp 1x, img/gallery_5@2x.webp 2x")
+							img(src="img/gallery_5.jpg" srcset="img/gallery_5.jpg 1x, img/gallery_5@2x.jpg 2x" alt="" title="" loading="lazy").gallery__item-img
+				.gallery__col
+					.gallery__item
+						picture.gallery__item-pic
+							source(type="image/webp" srcset="img/gallery_2.webp 1x, img/gallery_2@2x.webp 2x")
+							img(src="img/gallery_2.jpg" srcset="img/gallery_2.jpg 1x, img/gallery_2@2x.jpg 2x" alt="" title="" loading="lazy").gallery__item-img
+					.gallery__item
+						picture.gallery__item-pic
+							source(type="image/webp" srcset="img/gallery_4.webp 1x, img/gallery_4@2x.webp 2x")
+							img(src="img/gallery_4.jpg" srcset="img/gallery_4.jpg 1x, img/gallery_4@2x.jpg 2x" alt="" title="" loading="lazy").gallery__item-img
+
+
+		section.section#portfolio
+			h2.section__title Другие работы
+			.section__content
+				include ../../blocks/modules/p-slider/p-slider
+
+		section.contacts#contacts
+			.contacts__inner
+				h2.contacts__title  Наши контакты
+				.contacts__data
+					.contacts__data-line
+						a(href="tel:8 (911) 987 47 77").contacts__data-link 8 (911) 987 47 77
+					.contacts__data-line
+						a(href="mailto:info@gndesign.ru").contacts__data-link info@gndesign.ru
+					.contacts__data-line
+						p.contacts__data-text Санкт-Петербург, ул. Крапоткина, 1
+					.contacts__data-line
+						ul.social
+							li.social__item
+								a(href="#").social__item-link
+									svg.social__item-svg
+										use(xlink:href="img/sprites/sprite.svg#icon-inst")
+							li.social__item
+								a(href="#").social__item-link
+									svg.social__item-svg
+										use(xlink:href="img/sprites/sprite.svg#icon-tg")
+							li.social__item
+								a(href="#").social__item-link
+									svg.social__item-svg
+										use(xlink:href="img/sprites/sprite.svg#icon-wa")
+
+	include ../../blocks/modules/footer/footer
+	include ../../blocks/modules/up-btn/up-btn
+
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")
