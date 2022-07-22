@@ -7,7 +7,6 @@
     @media screen and (min-width: 1200px) {
       display: flex;
       align-items: center;
-      gap: 10px;
     }
   }
   &__col {
@@ -26,8 +25,12 @@
     }
     @media screen and (min-width: 1200px) {
       margin-bottom: 0;
+      margin-right: 10px;
       &:nth-child(2) {
         transform: translateY(-50px);
+      }
+      &:last-child {
+        margin-right: 0;
       }
     }
   }

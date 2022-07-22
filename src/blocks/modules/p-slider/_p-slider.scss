@@ -42,8 +42,8 @@
       position: absolute;
       right: 80px;
       border-radius: 50%;
-      width: 80px;
-      height: 80px;
+      width: 60px;
+      height: 60px;
       background-color: #fff;
       z-index: 3;
       cursor: pointer;
@@ -51,9 +51,14 @@
       transform: translateY(-50%);
       -webkit-tap-highlight-color: transparent;
       background-image: url('../img/sprites/sprite.svg#icon-arr-right');
-      background-size: 32px;
+      background-size: 22px;
       background-position: center;
       background-repeat: no-repeat;
+    }
+    @media screen and (min-width: 1340px) {
+      width: 80px;
+      height: 80px;
+      background-size: 32px;
     }
   }
   &__more {
