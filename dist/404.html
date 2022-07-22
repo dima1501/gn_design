@@ -64,7 +64,10 @@
       </div>
     </header>
     <main>
-      <section class="welcome" style="background-image: url(img/err-bg.jpg)">
+      <section class="welcome">
+        <picture class="welcome__bg">
+          <source type="image/webp" srcset="img/err-bg.webp 1x, img/err-bg.webp 2x"><img class="welcome__bg-img" src="img/err-bg.jpg" srcset="img/err-bg.jpg 1x, img/err-bg.jpg 2x" alt="" title="" loading="lazy">
+        </picture>
         <div class="welcome__inner">
           <div class="welcome__content">
             <div class="welcome__err">

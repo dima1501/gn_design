@@ -8,7 +8,10 @@ block content
   include ../../blocks/modules/header/header
 
   main
-    section.welcome(style="background-image: url(img/err-bg.jpg)")
+    section.welcome
+      picture.welcome__bg
+        source(type="image/webp" srcset="img/err-bg.webp 1x, img/err-bg.webp 2x")
+        img(src="img/err-bg.jpg" srcset="img/err-bg.jpg 1x, img/err-bg.jpg 2x" alt="" title="" loading="lazy").welcome__bg-img
       .welcome__inner
         .welcome__content
           .welcome__err

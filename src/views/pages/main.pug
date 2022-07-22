@@ -8,7 +8,10 @@ block content
 	include ../../blocks/modules/header/header
 
 	main
-		section.welcome(style="background-image: url(img/welcome_main_bg.jpg)")
+		section.welcome
+			picture.welcome__bg
+				source(type="image/webp" srcset="img/welcome_main_bg.webp 1x, img/welcome_main_bg.webp 2x")
+				img(src="img/welcome_main_bg.jpg" srcset="img/welcome_main_bg.jpg 1x, img/welcome_main_bg.jpg 2x" alt="" title="" loading="lazy").welcome__bg-img
 			.welcome__inner
 				.welcome__content._mobile-hidden
 					p.welcome__text Разрабатываю дизайн современных стильных помещений и домов.

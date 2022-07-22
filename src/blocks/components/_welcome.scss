@@ -2,6 +2,7 @@
   position: relative;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
   &:after {
     content: '';
     position: absolute;
@@ -12,6 +13,18 @@
     bottom: 0;
     pointer-events: none;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), transparent;
+  }
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    &-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   &__inner {
     position: relative;
