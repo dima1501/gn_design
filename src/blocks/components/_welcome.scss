@@ -17,6 +17,7 @@
     position: relative;
     z-index: 2;
     min-height: 100vh;
+    min-height: -webkit-fill-available;
     display: flex;
     justify-content: flex-end;
     padding: 106px 15px 24px;
