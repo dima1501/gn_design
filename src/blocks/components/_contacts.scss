@@ -1,7 +1,14 @@
 .contacts {
-  display: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
   @media screen and (min-width: 1200px) {
-    display: block;
+    position: relative;
+    opacity: 1;
+    width: auto;
+    height: auto;
     padding: 65px 80px 80px 80px;
   }
   &__inner {
