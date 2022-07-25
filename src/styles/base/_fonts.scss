@@ -9,3 +9,15 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/Montserrat-light.woff2') format('woff2'),
+    url('../fonts/Montserrat/Montserrat-light.woff') format('woff'),
+    url('../fonts/Montserrat/Montserrat-light.eot') format('eot'),
+    url('../fonts/Montserrat/Montserrat-light.otf') format('otf'),
+    url('../fonts/Montserrat/Montserrat-light.ttf') format('ttf');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
